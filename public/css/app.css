@@ -1,0 +1,184 @@
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f0f9; /* Latar belakang ungu muda */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header H1 */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #6a1b9a; /* Ungu gelap */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Penempatan kotak-kotak */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Kotak individual */
+.grid-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Tabel styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ececec;
+    text-align: left;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #8e44ad; /* Ungu */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f0e4fa; /* Ungu muda */
+}
+
+table tr:hover {
+    background-color: #dcd0e3; /* Ungu yang lebih terang */
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol gaya */
+.btn {
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol warna dasar */
+.btn-primary {
+    background-color: #9b59b6; /* Ungu terang */
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+}
+
+.btn-info {
+    background-color: #6c5ce7; /* Biru keunguan */
+    color: white;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #5a4fcf;
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Alert styling */
+.alert {
+    padding: 15px;
+    background-color: #8e44ad; /* Ungu */
+    color: white;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form input[type="text"],
+form input[type="date"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #9b59b6; /* Ungu */
+    outline: none;
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+}
+
+form button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #9b59b6; /* Ungu */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+}
